@@ -1,0 +1,182 @@
+*{
+    justify-content: center;
+
+}
+.BaseColor{
+    background-color: rgb(2, 24, 47);
+}
+.cold{
+    background:url(../../assets/images/snowy.avif);
+}
+.mild{
+    background:url(../../assets/images/mild.jpg);
+}
+.pleasent{
+    background:url(../../assets/images/rainy.avif);
+}
+.warm{
+    background:url(../../assets/images/sun.avif);
+}
+.WeatherBackground, .warm, .cold, .mild, .pleasent{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 20px;
+    background-color: rgba(0, 0, 0, 0.225);
+    background-blend-mode:overlay;
+    padding-bottom: 40px;
+    color: white;
+    
+}
+/*----------------------------------------------------------------------------*/
+.normalInfo{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(10, 10, 10, 0.484);
+    border-radius: 5%;
+    height: 330px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px 0px;
+}
+.normalInfo h1{
+    font-size: 80px;
+    margin-bottom: -25px;
+}
+.normalInfo h4{
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.normalInfo p{
+    font-size: 17px;
+}
+.detailedInfo{ 
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+/*----------------------------------------------------------------------------*/
+.extraInfo{
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.266);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 22px;    
+}
+.extraInfo img{
+    margin-top: 15px;
+    height: 50px;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: center;
+    text-align: center;
+}
+.details p{
+    margin-top: 20px;
+}
+.details h4{
+    transform: translateY(-15px);
+}
+/*----------------------------------------------------------------------------*/
+.SearchHolder, .NoSearchHolder{
+    background-color: rgba(254, 252, 252, 0.116);
+    display: flex;
+    justify-content: center;
+}
+.NoSearchHolder .searchInput::placeholder{
+    color: rgba(194, 4, 4, 0.947);
+}
+.NoSearchHolder .searchInput{
+    border-color: rgba(194, 4, 4, 0.947);
+    border-style: solid;
+    box-shadow: 0px 3px 3px 0px rgba(133, 5, 5, 0.597);
+}
+.NoSearchHolder .searchButton{
+    color: rgba(194, 4, 4, 0.947);
+}
+.searchInput{
+    border-radius:20px ;
+    margin: 10px;
+}
+.searchInput:hover{
+    box-shadow: 0px 3px 3px 0px rgb(0, 204, 255);
+}
+.NoSearchHolder .searchInput:hover{
+    box-shadow: 0px 3px 3px 0px rgb(249, 75, 75);
+}
+.searchButton{
+    height: 38px;
+    width: 38px;
+    margin: 15px;
+    border-radius: 10px;
+}
+.searchIcon{
+    height: 18px;
+}
+.searchButton:hover{
+    color: rgb(0, 208, 255);
+}
+.NoSearchHolder .searchButton:hover{
+    color: rgb(249, 75, 75);
+}
+/*----------------------------------------------------------------------------*/
+.IconBannerHolder{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#sad{
+    height: 240px;
+}
+.IconBannerHolder img{
+    height: 280px;
+}
+.locationHolder{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    width: 145px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.locationHolder h3{
+font-size: 35px;
+text-shadow: 2px 2px rgba(4, 4, 4, 0.985);
+}
+.locationHolder p{
+    transform: translateY(-55px);
+    text-shadow: 2px 1px 3px rgb(3, 3, 3);
+    font-size: 25px;
+}
+/*----------------------------------------------------------------------------*/
+
+@media only screen and (max-width:640px) {
+    .IconBannerHolder{
+        padding-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .locationHolder{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+/*----------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
